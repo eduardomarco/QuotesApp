@@ -1,26 +1,39 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Ionic 2 Quotes App
+Ionic 2 Counter App displays "Those Famous Quotes".
 
-## How to use this template
+* It reads from a json file and displays all the quotes
+* Allows filtering of the quotes with the search keyword
+* Allows to see details of the quotes
+* Allows to share it via twitter if opened in a mobile device with twitter app.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+## Pre-requisites
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+### Node.js
 
-### With the Ionic CLI:
+Latest version of Node.js 
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+### Ionic 2
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
+Latest version of Ionic would install Ionic 2.  Also install the plugin 
 
-Then, to run it, cd into `myBlank` and run:
+## Running the app
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+* Download the code
+* Issue the command "npm install"
+* Install the social sharing plugin using "ionic plugin add cordova-plugin-x-socialsharing"
+* Issue "ionic serve" to run on the browser
 
-Substitute ios for android if not on a Mac.
+## Running the app in android mobile
+
+* Issue "ionic platform add android"
+* Issue "ionic build android"
+* To run the app on the android emulator run "ionic emulate android"
+* To run the app on the connected device run "ionic run android"
+
+## Running the app in iOS mobile
+
+* Issue "ionic platform add ios"
+* Issue "ionic build ios"
+* To run the app on the iOS simulator run "ionic emulate android"
+* To run the app on the connected device run "ionic run ios"
 
